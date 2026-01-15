@@ -1,0 +1,15 @@
+version: v2
+plugins:
+  - local: protoc-gen-es
+    out: ../streamer/gen
+    opt:
+      - target=ts
+      - import_extension=none   # optional, if you use ESM w/o .js suffix
+    include_imports: true
+  - local: protoc-gen-es
+    out: ../web/src/app/gen
+    opt:
+      - target=ts
+      - import_extension=none   # optional, if you use ESM w/o .js suffix
+    include_imports: true
+  

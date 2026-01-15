@@ -1,0 +1,28 @@
+{
+  "name": "streamer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gen": "pnpm exec buf generate",
+    "dev": "tsx --tsconfig tsconfig.json server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.17.1",
+  "dependencies": {
+    "@bufbuild/buf": "^1.57.2",
+    "@bufbuild/protobuf": "^2.9.0",
+    "@connectrpc/connect": "^2.1.0",
+    "@connectrpc/connect-fastify": "^2.1.0",
+    "@connectrpc/connect-node": "^2.1.0",
+    "playwright": "^1.47.0",
+    "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "@bufbuild/protoc-gen-es": "^2.9.0",
+    "@types/node": "^24.5.2",
+    "tsx": "^4.20.5"
+  }
+}

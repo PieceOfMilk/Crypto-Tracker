@@ -1,0 +1,15 @@
+syntax = "proto3";
+package price.v1;
+
+service PriceService {
+  rpc StreamPrice(StreamPriceRequest) returns (stream StreamPriceResponse);
+}
+
+message StreamPriceRequest {
+  string symbol = 1; 
+}
+
+message StreamPriceResponse {
+  string symbol = 1;
+  double price = 2;
+}
